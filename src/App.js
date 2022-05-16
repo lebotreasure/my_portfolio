@@ -1,21 +1,17 @@
-// import About from "./components/About";
-// import Contact from "./components/Contact";
-// import Navbar from "./components/Navbar";
-// import Projects from "./components/Projects";
-// import Skills from "./components/Skills";
-// import Testimonials from "./components/Testimonials";
+import ThemeProvider from '@material-ui/styles/ThemeProvider';
+import 'roboto-npm-webfont';
+import './App.css';
+
+import ResponsiveDrawer from './components/drawer';
 
 
 function App() {
   return (
-    <main className='text-gray-400 bg-gray-900 body-font'>
-      {/* <About />
-      <Contact />
-      <Navbar />
-      <Projects />
-      <Skills />
-      <Testimonials /> */}
-    </main>
+    <ThemeProvider>
+          
+            <ResponsiveDrawer></ResponsiveDrawer>  
+           
+      </ThemeProvider>
   );
 }
 
